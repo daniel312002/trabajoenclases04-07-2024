@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Metadata básica de la página -->
+    <meta charset="UTF-8"> <!-- Establece la codificación de caracteres en UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Asegura que la página se renderice bien en dispositivos móviles -->
+    <title>Ingreso de Datos de Clientes</title> <!-- Título de la página -->
+    <link rel="stylesheet" href="styles.css"> <!-- Vincula la hoja de estilos externa -->
+</head>
+<body>
+    <div class="container"> <!-- Contenedor principal de la página -->
+        <h2>Ingreso de Datos de Clientes</h2> <!-- Encabezado principal -->
+        <div id="alert" class="alert" style="display: none;"></div> <!-- Div para mostrar alertas, inicialmente oculto -->
+        <form id="clienteForm"> <!-- Formulario para el ingreso de datos de clientes -->
+            <!-- Campo para la cédula -->
+            <label for="cedula">Cédula:</label>
+            <input type="text" id="cedula" name="cedula" required>
+            
+            <!-- Campo para los apellidos -->
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" required>
+            
+            <!-- Campo para los nombres -->
+            <label for="nombres">Nombres:</label>
+            <input type="text" id="nombres" name="nombres" required>
+            
+            <!-- Campo para la dirección -->
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion" required>
+            
+            <!-- Campo para el teléfono -->
+            <label for="telefono">Teléfono:</label>
+            <input type="text" id="telefono" name="telefono" required>
+            
+            <!-- Campo para el correo electrónico -->
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+            
+            <!-- Botón para enviar el formulario -->
+            <button type="submit">Guardar</button>
+        </form>
+        <!-- Botón para abrir una nueva página -->
+        <button id="newPageButton">Nueva Página</button>
+        <!-- Enlace a otra página para ver los datos guardados -->
+        <a href="ver_datos.html">Ver Datos Guardados</a>
+    </div>
+    <script src="script.js"></script> <!-- Vincula el archivo JavaScript externo -->
+</body>
+</html>
